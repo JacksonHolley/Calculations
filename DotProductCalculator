@@ -1,0 +1,16 @@
+v1 = []
+v2 = []
+dotProduct = 0
+
+answerSize = int(input("Size of vectors?"))
+
+for i in range (0, answerSize):
+    v1.append(int(input("a_" + str(i+1)+ " = "))) 
+
+for i in range (0, answerSize):
+    v2.append(int(input("b_" + str(i+1) + " = ")))
+
+for i in range(0,len(v1)):
+     dotProduct = dotProduct + (v1[i]*v2[i])
+
+print(dotProduct)
